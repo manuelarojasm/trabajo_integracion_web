@@ -166,9 +166,9 @@ void loop()
       Serial.println(F("Failed to read from DHT sensor!"));
       return;
     }
-    
-    tft.drawString("Humedad:", 40, 10, 2);            // Y=VERTICAL 240 X=HORIZONTAL 135
-    tft.drawString(dtostrf(h, 2, 2, tmp), 40, 40, 4); // convierte el valor de float a string
+
+    tft.drawString("Humedad:", 40, 10, 2);             // Y=VERTICAL 240 X=HORIZONTAL 135
+    tft.drawString(dtostrf(h, 2, 2, tmp), 40, 40, 4);  // convierte el valor de float a string
     tft.drawString("Temperatura:", 20, 100, 2);        // Y=VERTICAL 240 X=HORIZONTAL 135
     tft.drawString(dtostrf(t, 2, 2, tmp), 40, 120, 4); // covierte el valor de float a string
 
