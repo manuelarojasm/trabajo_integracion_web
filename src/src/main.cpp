@@ -13,18 +13,18 @@
 #define DHTPIN 27            // definicion del pin
 #define DHTTYPE DHT11        // definir el tipo de dht
 
-TFT_eSPI tft = TFT_eSPI();                                         // se define el constructor de las funciones principales
-DHT dht(DHTPIN, DHTTYPE);                                          // constructor
-const char *UBIDOTS_TOKEN = "BBFF-xFH0QzcOOz1K1j8upjtmWxfsx0t7MA"; // Put here your Ubidots TOKEN
-const char *PUBLISH_DEVICE_LABEL = "esp32";                        // Put here your Device label to which data  will be published
-const char *VARIABLE_LABEL1 = "temperatura";                       // Put here your Variable label to which data  will be published
-const char *VARIABLE_LABEL2 = "humedad";                           // Put here your Variable label to which data  will be published
-const char *SUBSCRIBE_DEVICE_LABEL = "esp32";                      // Replace with the device label to subscribe to
-const char *SUBSCRIBE_VARIABLE_LABEL = "switch1";                  // Replace with the variable label to subscribe to
-const char *SUBSCRIBE_VARIABLE_LABEL2 = "switch2";                 // Replace with the variable label to subscribe to
-const int PUBLISH_FREQUENCY = 5000;                                // Update rate in millisecondsx
-const char *VARIABLE_LABEL3 = "statesw1";                          // Replace with the variable label to subscribe to
-const char *VARIABLE_LABEL4 = "statesw2";                          // Replace with the variable label to subscribe to
+TFT_eSPI tft = TFT_eSPI();                         // se define el constructor de las funciones principales
+DHT dht(DHTPIN, DHTTYPE);                          // constructor
+const char *UBIDOTS_TOKEN = "";                    // Put here your Ubidots TOKEN
+const char *PUBLISH_DEVICE_LABEL = "esp32";        // Put here your Device label to which data  will be published
+const char *VARIABLE_LABEL1 = "temperatura";       // Put here your Variable label to which data  will be published
+const char *VARIABLE_LABEL2 = "humedad";           // Put here your Variable label to which data  will be published
+const char *SUBSCRIBE_DEVICE_LABEL = "esp32";      // Replace with the device label to subscribe to
+const char *SUBSCRIBE_VARIABLE_LABEL = "switch1";  // Replace with the variable label to subscribe to
+const char *SUBSCRIBE_VARIABLE_LABEL2 = "switch2"; // Replace with the variable label to subscribe to
+const int PUBLISH_FREQUENCY = 5000;                // Update rate in millisecondsx
+const char *VARIABLE_LABEL3 = "statesw1";          // Replace with the variable label to subscribe to
+const char *VARIABLE_LABEL4 = "statesw2";          // Replace with the variable label to subscribe to
 
 char tmp[12]; // arreglo de char para almacenar el float convertido
 
